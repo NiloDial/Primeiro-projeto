@@ -1,0 +1,115 @@
+@import "<link href=https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap rel=stylesheet>";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: rgba(12, 12, 12, 0.87);
+    color: whitesmoke;
+}
+header{
+    padding: 20px;
+    border-bottom: 1px solid rgba(20, 20, 20, 0.678);
+    text-align: center;
+    color: whitesmoke;
+    
+}
+header div a{
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+    font-family: 'Bebas Neue', sans-serif;
+}
+header div a:hover{
+    color: teal;
+    transition: 800ms;
+}
+#nd{
+   text-align: center;
+   padding: 35px;
+}
+#nd img{
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 33px;
+    height: 250px;
+}
+#nd h1{
+    font-size: 40px;
+    line-height: 30px;
+    color:teal;
+}
+#nd h2{
+    font-size: 28px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+#nd p{
+    margin: 32px auto;
+}
+
+/*======================CARDS======================*/ 
+
+#titulo{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.card_conteudo{
+    background-color: #7159c146;
+    padding: 20px;
+    
+}
+.card_imagens img{
+    width: 100%;
+}
+
+/*=====================Modal====================*/
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.527);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+
+}
+/*=====================Modal Ativo====================*/
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+
+}
